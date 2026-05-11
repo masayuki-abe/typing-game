@@ -1,31 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 要素の取得
-    const section = document.querySelector('section');
-    const imgEl = section.querySelector('img');
-    const nameEl = section.querySelectorAll('p')[0];
-    const yomiEl = section.querySelectorAll('p')[1];
-    const imageTextEl = section.querySelectorAll('p')[2];
-    const inputEl = section.querySelector('input');
+    const imgEl = document.querySelector('.card-image');
+    const nameEl = document.querySelector('.card-name');
+    const yomiEl = document.querySelector('.card-yomi');
+    const imageTextEl = document.querySelector('.target-text');
+    const inputEl = document.querySelector('.typing-input');
+    const feedbackEl = document.querySelector('.feedback-msg');
 
     let cardData = [];
     let currentCard = null;
 
-    // 1. JSONデータの読み込み
     fetch('./shinennooverforce.json')
         .then(response => response.json())
         .then(data => {
             cardData = data;
-            displayRandomCard(); // 最初のカードを表示
+            displayRandomCard();
         })
         .catch(error => console.error('データの読み込みに失敗しました:', error));
 
-    // 2. ランダムなカードを表示する関数
     function displayRandomCard() {
-        if (cardData.length === 0) return;
+        // --- 終了判定 ---
+        if (cardData.length === 0) {
+            showGameClear();
+            return;
+        }
 
-        // ランダムに1つ選択
+        feedbackEl.classList.remove('show');
+
+        // --- 重複排除のロジック ---
+        // 1. 現在の配列の長さからランダムなインデックスを決定
         const randomIndex = Math.floor(Math.random() * cardData.length);
-        currentCard = cardData[randomIndex];
+
+        // 2. spliceを使って、配列からその要素を削除しつつ取得する
+        // spliceは配列を返すので、その[0]番目を取り出す
+        currentCard = cardData.splice(randomIndex, 1)[0];
+
+        console.log(`残り枚数: ${cardData.length}枚`);
 
         // HTML要素の更新
         imgEl.src = `./images/${currentCard.image}.jpg`;
@@ -35,26 +44,45 @@ document.addEventListener('DOMContentLoaded', () => {
         imageTextEl.textContent = currentCard.image;
         inputEl.placeholder = currentCard.card_yomi;
 
-
-        // 入力欄をリセットしてフォーカスを当てる
         inputEl.value = '';
         inputEl.focus();
     }
 
-    // 3. 入力判定（Enterキー）
+    // 全クリア時の処理
+    function showGameClear() {
+        // ゲーム画面を非表示にするか、クリアメッセージを出す
+        imgEl.style.display = 'none';
+        nameEl.textContent = "Congratulations!";
+        yomiEl.textContent = "すべてのカードをマスターしました！";
+        imageTextEl.textContent = "";
+        inputEl.style.display = 'none';
+
+        feedbackEl.textContent = "ALL CLEAR!";
+        feedbackEl.className = "feedback-msg is-good show";
+    }
+
     inputEl.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             const userInput = inputEl.value.trim();
 
-            // 判定（imageの文字列と一致するか）
             if (userInput === currentCard.card_yomi) {
-                console.log('正解！');
-                displayRandomCard(); // 次のカードへ
+                feedbackEl.textContent = "Good!";
+                feedbackEl.className = "feedback-msg is-good show";
+
+                setTimeout(() => {
+                    displayRandomCard();
+                }, 500);
             } else {
-                console.log('不正解です');
-                // 不正解時の演出（赤く光らせるなど）をここに追加可能
-                inputEl.value = ''; // 間違えたらクリアする場合
+                feedbackEl.textContent = "Miss!";
+                feedbackEl.className = "feedback-msg is-miss show";
+                inputEl.value = '';
             }
+        }
+    });
+
+    inputEl.addEventListener('input', () => {
+        if (feedbackEl.classList.contains('is-miss')) {
+            feedbackEl.classList.remove('show');
         }
     });
 });

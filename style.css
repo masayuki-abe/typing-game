@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -47,11 +48,36 @@ body {
   width: 90vw;
   padding: 1em;
   outline: none;
-  border-width: 0 0 4px 0;
+  border-width: 2px;
   border-color: #ccc;
   border-style: solid;
   text-align: center;
 }
 .typing-input:focus {
-  border-width: 0 0 4px 0;
+  border-width: 2px;
+}
+
+/* フィードバックメッセージの基本スタイル */
+.feedback-msg {
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 1.5rem; /* 高さを固定しておくとレイアウトが崩れません */
+  margin: 10px 0;
+  opacity: 0; /* 初期状態は透明 */
+  transition: opacity 0.5s ease; /* 0.5秒かけてフェード変化 */
+}
+
+/* 表示状態（JSでこのクラスを付け外しします） */
+.feedback-msg.show {
+  opacity: 1;
+}
+
+/* 正解時のスタイル */
+.feedback-msg.is-good {
+  color: #4caf50; /* 緑系 */
+}
+
+/* 不正解時のスタイル */
+.feedback-msg.is-miss {
+  color: #f44336; /* 赤系 */
 }/*# sourceMappingURL=style.css.map */
