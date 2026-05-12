@@ -14,7 +14,7 @@
         "text": "このカードはリリースなし、または表側表示モンスター（地属性）３体をリリースして攻撃表示で召喚できる。リリースなしの場合、このカードの元々の攻撃力は１９００になる。",
         "conditions": "上記の方法でモンスター３体をリリースしてこのカードを召喚したターンに発動できる。",
         "effect": "相手フィールドの表側表示のカードを全て破壊する。",
-        "image": "shinjuuoubarubarosu"
+        "image": "sinzyuuoubarubarosu"
     },
     {
         "card_type": "モンスター",
@@ -31,7 +31,7 @@
         "text": "",
         "conditions": "手札１枚またはデッキの上からカード２枚を墓地へ送って発動できる。",
         "effect": "このカードのカード名はこのターン、「C・ダークマター・ヴォイジャー」になる。この効果の条件で手札を墓地へ送った場合、代わりにこのカードのカード名をこのターン「ヴォイドヴェルグ・レクイエム」にできる。",
-        "image": "voidoverugusutoku"
+        "image": "voidoverugusuto-ku"
     },
     {
         "card_type": "モンスター",
@@ -48,12 +48,12 @@
         "text": "",
         "conditions": "自分のデッキのカードが１０枚以上の場合、手札のモンスター（地属性・水属性・炎属性・風属性／ギャラクシー族）１体を墓地へ送るか、自分の墓地のモンスター（レベル１以外／ギャラクシー族）４体をデッキに戻して発動できる。",
         "effect": "自分は１枚ドローする。",
-        "image": "voidoaruvuamemboija"
+        "image": "voidoaruvuamenboizya-"
     },
     {
         "card_type": "モンスター",
         "legend": "FALSE",
-        "card_name": "ヴォイドアルヴ_タマムシュトルーベ",
+        "card_name": "ヴォイドアルヴ・タマムシュトルーベ",
         "card_yomi": "ゔぉいどあるゔたまむしゅとるーべ",
         "attribute": "風",
         "level": "2",
@@ -65,7 +65,7 @@
         "text": "",
         "conditions": "デッキの上からカード２枚を墓地へ送って発動できる。",
         "effect": "このカードのカード名はこのターン、「ヴォイドアルヴ・ヘヴンスター」になる。その後、自分の墓地の「マイクロノヴァ」を２枚まで選んで手札に加える事ができる。この効果の発動後、ターン終了時まで自分はモンスター（ギャラクシー族以外）の効果を発動できない。",
-        "image": "voidoaruvutamamushutorube"
+        "image": "voidoaruvutamamusyutoru-be"
     },
     {
         "card_type": "モンスター",
@@ -82,7 +82,7 @@
         "text": "",
         "conditions": "自分フィールドの表側表示モンスターの属性が３種類の場合、または自分の墓地に「マイクロノヴァ」がある場合に発動できる。",
         "effect": "自分の墓地の効果モンスター（レベル４以外／地属性・水属性・炎属性・風属性／ギャラクシー族）１体を選んで手札に加える。その後、自分の墓地の「マイクロノヴァ」１枚を選んで手札に加える事ができる。",
-        "image": "voidoaruvumantisuta"
+        "image": "voidoaruvumantisuta-"
     },
     {
         "card_type": "モンスター",
@@ -116,7 +116,7 @@
         "text": "",
         "conditions": "自分のデッキのカードが１０枚以上の場合、自分の墓地のカード１枚をデッキに戻して発動できる。",
         "effect": "自分の手札１枚を選んで墓地へ送る。その後、自分は１枚ドローできる。ドローした場合、さらに自分の墓地の「マイクロノヴァ・フュージョン」１枚を選んで手札に加える事ができる。",
-        "image": "voidoaruvuhevunsuta"
+        "image": "voidoaruvuhevunsuta-"
     },
     {
         "card_type": "モンスター",
@@ -150,7 +150,7 @@
         "text": "",
         "conditions": "このカードを召喚・特殊召喚した自分メインフェイズに発動できる。",
         "effect": "自分のデッキの上からカード２枚を墓地へ送る。その後、自分の墓地の「イシリアの供物」「イシリアの棺」「イシリアの霊魂」のいずれか１枚を選んで手札に加える事ができる。加えた場合、さらに自分の墓地の「冥跡祭－イシリアの降霊－」１枚を選んで手札に加える事ができる。",
-        "image": "ishirianoyorishiro"
+        "image": "isirianoyorisiro"
     },
     {
         "card_type": "モンスター",
@@ -167,7 +167,7 @@
         "text": "自分フィールドに表側表示の「冥跡のジュンディー」または「イシリアの依代」がいる場合",
         "conditions": "このカードは手札から自分フィールドに表側守備表示で特殊召喚できる。",
         "effect": "このカードを召喚・特殊召喚した自分メインフェイズに、デッキの一番上のカードを墓地へ送って発動できる。",
-        "image": "meisekinokadi"
+        "image": "meisekinoka-di-"
     },
     {
         "card_type": "モンスター",
@@ -184,7 +184,7 @@
         "text": "",
         "conditions": "なし",
         "effect": "【永続効果】このカードと自分フィールドの魔法・罠カードは相手の効果では破壊されない。自分フィールドの表側表示モンスター（地属性／獣戦士族）の攻撃力は５００アップする。",
-        "image": "meisekinoamiru"
+        "image": "meisekinoami-ru"
     },
     {
         "card_type": "モンスター",
@@ -201,7 +201,7 @@
         "text": "",
         "conditions": "自分のデッキのカードが１０枚以上の場合、このカード以外の自分の手札・フィールドのカードを２枚までお互いに確認し、好きな順番で持ち主のデッキの下に戻して発動できる。",
         "effect": "自分は［この効果の条件で戻したカードの数］だけドローする。この効果の発動後、ターン終了時まで自分はモンスター（地属性／ギャラクシー族）以外のモンスターの効果を発動できない。",
-        "image": "munfosupiyopi"
+        "image": "mu-nfo-supiyopi"
     },
     {
         "card_type": "モンスター",
@@ -218,7 +218,7 @@
         "text": "",
         "conditions": "自分の墓地のモンスターが４体以下の場合に発動できる。",
         "effect": "相手のデッキの上からカード２枚を墓地へ送る。その後、相手の墓地にモンスターが５体以上いて、自分がこのメインフェイズにドローしていない場合、自分は２枚ドローできる。この効果の発動後、ターン終了時まで自分はモンスター（地属性／ギャラクシー族）以外のモンスターの効果を発動できない。",
-        "image": "munfosurifetto"
+        "image": "mu-nfo-surifetto"
     },
     {
         "card_type": "モンスター",
@@ -235,7 +235,7 @@
         "text": "",
         "conditions": "自分の墓地のモンスターが４体以下の場合に発動できる。",
         "effect": "自分のデッキの上からカードを４枚めくり、お互いに確認する。自分はその中からモンスター（レベル２以外／地属性／ギャラクシー族）と「悠久の郷－スペクトリカ－」をそれぞれ１枚まで選んで手札に加える事ができる。残りのカードを好きな順番でデッキの下に戻す。このターン、自分はモンスター（地属性／ギャラクシー族）でしか攻撃できない。",
-        "image": "munfosushira"
+        "image": "mu-nfo-susi-ra"
     },
     {
         "card_type": "モンスター",
@@ -252,7 +252,7 @@
         "text": "",
         "conditions": "自分フィールドの表側表示モンスター１体の表示形式を変更して発動できる。",
         "effect": "相手フィールドの表側表示モンスター（レベル８以下）１体を選ぶ。次の相手ターン、相手はそのモンスターで攻撃できない。さらに、自分の墓地のモンスター１体を選んでデッキの下に戻す事ができる。戻した場合、このカードの守備力は次の相手ターン終了時まで５００アップする。",
-        "image": "munfosuziji"
+        "image": "mu-nfo-suzizi-"
     },
     {
         "card_type": "モンスター",
@@ -269,7 +269,7 @@
         "text": "",
         "conditions": "このカードを召喚したターンに、自分のデッキのカードが１０枚以上の場合、手札１枚と自分の墓地のモンスター（地属性／ギャラクシー族）１体を好きな順番でデッキの下に戻して発動できる。",
         "effect": "自分は２枚ドローする。このターン,自分はモンスター（地属性／ギャラクシー族）でしか攻撃できず、相手は効果ダメージを受けない。",
-        "image": "munfosutimo"
+        "image": "mu-nfo-sutimo"
     },
     {
         "card_type": "モンスター",
@@ -286,7 +286,7 @@
         "text": "",
         "conditions": "手札１枚を墓地へ送って発動できる。",
         "effect": "自分のデッキの上からカード２枚を墓地へ送る。その後、自分の墓地の通常モンスター（炎族）１体または「火麺味変化の術」１枚を選んで手札に加える事ができる。",
-        "image": "kamenninjasutore"
+        "image": "kamenninzyasutore-"
     },
     {
         "card_type": "モンスター",
@@ -303,7 +303,7 @@
         "text": "自分の墓地に通常モンスター（炎族）がいる場合",
         "conditions": "このカードはリリースなしで召喚できる。",
         "effect": "デッキの一番上のカードを墓地へ送って発動できる。",
-        "image": "supesharuteisutoinsupekuta"
+        "image": "supesyaruteisutoinsupekuta-"
     },
     {
         "card_type": "モンスター",
@@ -337,7 +337,7 @@
         "text": "",
         "conditions": "このカード以外の自分の手札・フィールドのカード１枚を墓地へ送って発動できる。",
         "effect": "このカードの攻撃力は次の相手ターン終了時まで１８００アップする。このカードを召喚したターンにこの効果を発動した場合、さらに自分の墓地のモンスター（レベル７以上／天使族／攻撃力０）１体または「ラヴ・クリーン」１枚を選んで手札に加える事ができる。",
-        "image": "ravufereshute"
+        "image": "ravuferesyute"
     },
     {
         "card_type": "モンスター",
@@ -354,7 +354,7 @@
         "text": "",
         "conditions": "自分フィールドにこのカード以外の表側表示モンスター（光属性／水族）がいる場合、デッキの一番上のカードを墓地へ送って発動できる。",
         "effect": "相手フィールドの表側表示モンスター１体を選び、その攻撃力・守備力をターン終了時まで５００ダウンする。自分フィールドに表側表示の「いとをかしかなひめ」がいる場合、さらに相手フィールドのモンスターを２体まで選んで表示形式を変更できる。",
-        "image": "itookashiinu"
+        "image": "itowokasiinu"
     },
     {
         "card_type": "モンスター",
@@ -371,7 +371,7 @@
         "text": "",
         "conditions": "手札１枚を墓地へ送って発動できる。",
         "effect": "自分のデッキの上からカード３枚を墓地へ送る。その後、自分の墓地の通常モンスター（水族）またはモンスター（レベル４／光属性／水族）１体を選んで手札に加える事ができる。この効果で「いとをかしかなひめ」を選んだ場合、さらに自分の墓地のリチュアル魔法カード１枚を選んで自分の魔法＆罠ゾーンにセットできる。",
-        "image": "itookashiemakihime"
+        "image": "itowokasiemakihime"
     },
     {
         "card_type": "モンスター",
@@ -388,7 +388,7 @@
         "text": "",
         "conditions": "このカードを召喚・特殊召喚した自分メインフェイズに発動できる。",
         "effect": "自分の墓地の「テイク・アタック」１枚を選んで手札に加える。",
-        "image": "hangurionion"
+        "image": "hanguri-onionn"
     },
     {
         "card_type": "モンスター",
@@ -405,7 +405,7 @@
         "text": "",
         "conditions": "自分フィールドに表側表示のリチュアルモンスター（レベル７以下／水属性／魚族）がいる場合に発動できる。",
         "effect": "相手フィールドのカード１枚を選んで持ち主の手札に戻す。このターン、自分はモンスター（魚族以外）で攻撃できない。",
-        "image": "saibogudorufin"
+        "image": "saibo-gudorufinn"
     },
     {
         "card_type": "モンスター",
@@ -422,7 +422,7 @@
         "text": "",
         "conditions": "なし",
         "effect": "【永続効果】お互いのバトルフェイズの間、自分フィールドの表側表示モンスター（魚族）の攻撃力は、［自分フィールドのモンスターの数］×４００アップする。自分の「要塞クジラ」は直接攻撃できる。",
-        "image": "saibogunairu"
+        "image": "saibo-gunairu"
     },
     {
         "card_type": "モンスター",
@@ -439,7 +439,7 @@
         "text": "",
         "conditions": "攻撃表示のこのカードを表側守備表示にして発動できる。",
         "effect": "このターン、モンスター（光属性／昆虫族）を攻撃表示でアドバンス召喚する場合、表側表示のこのカードは２体分のリリースにできる。さらに、相手フィールドの表側表示モンスター１体を選んでその種族をターン終了時まで昆虫族にできる。",
-        "image": "muchuunotiga"
+        "image": "mutyuunoti-ga"
     },
     {
         "card_type": "モンスター",
@@ -456,7 +456,7 @@
         "text": "",
         "conditions": "デッキの上からカード２枚を墓地へ送って発動できる。",
         "effect": "このカードの攻撃力はターン終了時まで６００アップする。その後、自分の手札１枚を選んで墓地へ送る事ができる。この効果で墓地へ送った場合、さらに相手フィールドのモンスター１体を選んで表示形式を変更できる。",
-        "image": "bisutobureida"
+        "image": "bi-sutobureida-"
     },
     {
         "card_type": "モンスター",
@@ -473,7 +473,7 @@
         "text": "",
         "conditions": "このカードを召喚したターンに発動できる。",
         "effect": "自分のデッキの上からカード２枚を墓地へ送る。その後、自分の墓地のリチュアル魔法カード１枚を選んで自分の魔法＆罠ゾーンにセットできる。このターン、自分はモンスター（魚族以外）で攻撃できない。",
-        "image": "shurainrinkosu"
+        "image": "syurainrinkosu"
     },
     {
         "card_type": "モンスター",
@@ -507,7 +507,7 @@
         "text": "",
         "conditions": "なし",
         "effect": "【永続効果】このカードが戦闘でモンスターを破壊し墓地へ送った時、相手は１枚ドローする。",
-        "image": "chensoinsekuto"
+        "image": "tye-nso-insekuto"
     },
     {
         "card_type": "モンスター",
@@ -524,7 +524,7 @@
         "text": "このカードはモンスター（ギャラクシー族）１体をリリースして攻撃表示でアドバンス召喚できる。",
         "conditions": "このカードを召喚・特殊召喚した自分メインフェイズに発動できる。",
         "effect": "相手フィールドの魔法・罠カード１枚を選んで破壊する。",
-        "image": "juugankairamburupairu"
+        "image": "zyuugankairanburupairu"
     },
     {
         "card_type": "モンスター",
@@ -541,7 +541,7 @@
         "text": "「C・ダークマター・ヴォイジャー」＋モンスター（レベル４以下／闇属性） このカードはコンタクトフュージョンできる。",
         "conditions": "このカードをフュージョン召喚した自分メインフェイズに発動できる。",
         "effect": "相手の魔法＆罠ゾーンの裏側表示のカード１枚を選んで破壊する。このターン、自分はモンスター（闇属性／ギャラクシー族）でしか攻撃できない。",
-        "image": "voidoverugubiyondopurobu"
+        "image": "voidoverugubiyondopuro-bu"
     },
     {
         "card_type": "モンスター",
@@ -575,7 +575,7 @@
         "text": "「ヴォイドアルヴ・ヘヴンスター」＋モンスター（風属性）",
         "conditions": "このカードをフュージョン召喚した自分メインフェイズに、自分の墓地のモンスター（レベル７以下／風属性）１体をデッキの下に戻して発動できる。",
         "effect": "このカードの攻撃力はターン終了時まで、［この効果の条件で戻したモンスターのレベル］×５００アップする。このターン、自分はモンスター（ギャラクシー族）でしか攻撃できない。",
-        "image": "voidoaruvusutasutoraipu"
+        "image": "voidoaruvusuta-sutoraipu"
     },
     {
         "card_type": "モンスター",
@@ -592,7 +592,7 @@
         "text": "「ヴォイドアルヴ・ヘヴンスター」＋モンスター（水属性）",
         "conditions": "このカードをフュージョン召喚した自分メインフェイズに、モンスター（水属性）を含む自分の墓地のモンスター（ギャラクシー族）３体をデッキに戻して発動できる。",
         "effect": "相手フィールドの表側表示モンスター（レベル８以下）または裏側表示モンスターを合計３体まで選んで持ち主の手札に戻す。このターン、自分はモンスター１体でしか攻撃できない。",
-        "image": "voidoaruvusutameifurai"
+        "image": "voidoaruvusuta-meifurai"
     },
     {
         "card_type": "モンスター",
@@ -609,7 +609,7 @@
         "text": "「火麺忍者ストレー」＋「万能調味査察官」",
         "conditions": "自分の墓地のモンスター（炎族）３体をデッキに戻して発動できる。",
         "effect": "このターン、このカードは直接攻撃できる。さらに、相手フィールドの攻撃表示モンスター１体を選んで裏側守備表示にできる。",
-        "image": "kamensokunimbigininguhiyashi"
+        "image": "kamensokuninbigininguhiyasi"
     },
     {
         "card_type": "モンスター",
@@ -626,7 +626,7 @@
         "text": "「火麺上忍ゴックブート」＋「万能調味査察官」",
         "conditions": "このカードをフュージョン召喚した自分メインフェイズに発動できる。",
         "effect": "自分の墓地のモンスター（レベル７／炎族）１体を選び、自分フィールドに表側表示で特殊召喚する。この効果で「火麺上忍ゴックブート」を特殊召喚した場合、さらに相手フィールドのカード１枚を選んで破壊できる。",
-        "image": "kamentokuningokkubutonoukouniboshi"
+        "image": "kamentokuningokkubu-tonoukounibosi"
     },
     {
         "card_type": "モンスター",
@@ -643,7 +643,7 @@
         "text": "このカードは「冥跡祭－イシリアの降霊－」の効果でしか特殊召喚できない。",
         "conditions": "なし",
         "effect": "【永続効果】このカードは効果では破壊されない。自分がモンスター（獣戦士族）を表側表示で召喚・特殊召喚した時に相手は罠カードを発動できない。自分ターンの間、このカード以外の自分フィールドの表側表示モンスター（地属性／獣戦士族）の攻撃力は３０００アップし、その攻撃は貫通する。",
-        "image": "meisekishinishiria"
+        "image": "meisekisinnisiria"
     },
     {
         "card_type": "モンスター",
@@ -660,7 +660,7 @@
         "text": "",
         "conditions": "このカードを特殊召喚した自分メインフェイズに、自分の墓地のモンスターが５体以下の場合、自分フィールドの表側表示モンスター１体の表示形式を変更して発動できる。",
         "effect": "次の相手ターン終了時まで、このカードが表側表示の間、相手は墓地からモンスター（レベル５以下）を表側表示で特殊召喚できない。",
-        "image": "runamunfosuaruba"
+        "image": "runamu-nfo-suaruba"
     },
     {
         "card_type": "モンスター",
@@ -677,12 +677,12 @@
         "text": "",
         "conditions": "このカード以外の自分フィールドの表側表示モンスターまたは自分の墓地のモンスターを合計３体好きな順番で持ち主のデッキの下に戻して発動できる。",
         "effect": "相手フィールドのモンスター１体を選んで破壊する。その後、相手の墓地にモンスターが５体以上いる場合、相手フィールドの魔法・罠カード１枚を選んで破壊できる。",
-        "image": "runamunfosumochi"
+        "image": "runamu-nfo-sumoti"
     },
     {
         "card_type": "モンスター",
         "legend": "FALSE",
-        "card_name": "ルナムーンフォース_ドラリア",
+        "card_name": "ルナムーンフォース・ドラリア",
         "card_yomi": "るなむーんふぉーすどらりあ",
         "attribute": "地",
         "level": "9",
@@ -694,7 +694,7 @@
         "text": "",
         "conditions": "相手の墓地のモンスターの数が自分の墓地のモンスターの数より多い場合、自分の墓地のモンスター１体をデッキの下に戻して発動できる。",
         "effect": "次の相手ターン終了時まで、このカードの攻撃力は［お互いの墓地のモンスターの数の差］×１００アップし、その攻撃は貫通する。",
-        "image": "runamunfosudoraria"
+        "image": "runamu-nfo-sudoraria"
     },
     {
         "card_type": "モンスター",
@@ -711,7 +711,7 @@
         "text": "",
         "conditions": "",
         "effect": "",
-        "image": "yousaikujira"
+        "image": "yousaikuzira"
     },
     {
         "card_type": "魔法",
@@ -728,7 +728,7 @@
         "text": "",
         "conditions": "",
         "effect": "自分が「シャドウフォース・エクスプロージョン」を発動していないターンに、手札１枚をデッキの上か下に戻して発動できる。",
-        "image": "shadoufosuekusupurojon"
+        "image": "syadoufo-suekusupuro-zyonn"
     },
     {
         "card_type": "魔法",
@@ -745,7 +745,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "wamuvoidohoru"
+        "image": "wa-muvoidoho-ru"
     },
     {
         "card_type": "魔法",
@@ -779,7 +779,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "maikuronovafyujon"
+        "image": "maikuronovafyu-zyonn"
     },
     {
         "card_type": "魔法",
@@ -796,7 +796,7 @@
         "text": "",
         "conditions": "",
         "effect": "手札と自分フィールドの裏側表示のカードの内、「イシリアの供物」「イシリアの棺」「イシリアの霊魂」を１枚ずつ墓地へ送って発動できる。",
-        "image": "meisekisaiishirianokourei"
+        "image": "meisekisaiisirianokourei"
     },
     {
         "card_type": "魔法",
@@ -813,7 +813,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "ishirianokumotsu"
+        "image": "isirianokumotu"
     },
     {
         "card_type": "魔法",
@@ -830,7 +830,7 @@
         "text": "",
         "conditions": "",
         "effect": "自分の墓地にモンスター（レベル７／地属性／獣戦士族）がいる場合、自分フィールドのモンスター１体を墓地へ送って発動できる。",
-        "image": "ishirianohitsugi"
+        "image": "isirianohitugi"
     },
     {
         "card_type": "魔法",
@@ -847,7 +847,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "meisekisainojumbi"
+        "image": "meisekisainozyunbi"
     },
     {
         "card_type": "魔法",
@@ -864,7 +864,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "endoresupatona"
+        "image": "endoresupa-tona-"
     },
     {
         "card_type": "魔法",
@@ -881,7 +881,7 @@
         "text": "",
         "conditions": "",
         "effect": "自分が「陽だまりのひととき」を発動していないターンに発動できる。",
-        "image": "memoriobusanritto"
+        "image": "memori-obusanritto"
     },
     {
         "card_type": "魔法",
@@ -915,7 +915,7 @@
         "text": "",
         "conditions": "",
         "effect": "自分が「火麺味変化の術」を発動していないターンに、EXデッキのフュージョンモンスター（炎属性／攻撃力２９００）１体を相手に見せ、そのモンスターに素材として記されたカード名を１つ宣言して発動できる。",
-        "image": "kamenajihengenojutsu"
+        "image": "kamennazihengenozyutu"
     },
     {
         "card_type": "魔法",
@@ -949,7 +949,7 @@
         "text": "",
         "conditions": "手札または墓地にあるこのカードのカード名は「ハングリークーポン」になる。",
         "effect": "なし",
-        "image": "hangurisupesharukupon"
+        "image": "hanguri-supesyaruku-ponn"
     },
     {
         "card_type": "魔法",
@@ -983,7 +983,7 @@
         "text": "",
         "conditions": "",
         "effect": "なし",
-        "image": "yousaikujiranochikai"
+        "image": "yousaikuziranotikai"
     },
     {
         "card_type": "魔法",
@@ -1017,7 +1017,7 @@
         "text": "",
         "conditions": "",
         "effect": "自分のデッキのカードが１０枚以上の場合に発動できる。",
-        "image": "supininguabudakushon"
+        "image": "supininguabudakusyonn"
     },
     {
         "card_type": "罠",
@@ -1034,7 +1034,7 @@
         "text": "",
         "conditions": "",
         "effect": "相手がモンスターを召喚・特殊召喚した時に発動できる。",
-        "image": "insekutotorasu"
+        "image": "insekutoto-rasu"
     },
     {
         "card_type": "罠",
@@ -1051,7 +1051,7 @@
         "text": "",
         "conditions": "",
         "effect": "相手ターンに相手がモンスターを召喚・特殊召喚した時に発動できる。",
-        "image": "ishirianoreikon"
+        "image": "isirianoreikonn"
     },
     {
         "card_type": "罠",
@@ -1085,7 +1085,7 @@
         "text": "",
         "conditions": "",
         "effect": "相手がモンスターを召喚・特殊召喚した時に発動できる。",
-        "image": "ravukurin"
+        "image": "ravukuri-nn"
     },
     {
         "card_type": "罠",
@@ -1102,12 +1102,12 @@
         "text": "",
         "conditions": "",
         "effect": "相手がドローした時、相手が魔法・罠カードをセットした時、または相手モンスターの攻撃宣言時に発動できる。",
-        "image": "sajinnoootatsumaki"
+        "image": "sazinnoootatumaki"
     },
     {
         "card_type": "モンスター",
         "legend": "FALSE",
-        "card_name": "E・HERO エッジマン",
+        "card_name": "E・HEROエッジマン",
         "card_yomi": "えれめんたるひーろーえっじまん",
         "attribute": "地",
         "level": "7",
@@ -1119,12 +1119,12 @@
         "text": "",
         "conditions": "なし",
         "effect": "【永続効果】このカードの攻撃は貫通する。自分ターンの間、自分または相手フィールドに表側表示の「摩天楼 －スカイスクレイパー－」がある場合、このカードの攻撃力は１０００アップする。",
-        "image": "erementaruhiroejjiman"
+        "image": "erementaruhi-ro-ezzimann"
     },
     {
         "card_type": "モンスター",
         "legend": "FALSE",
-        "card_name": "E・HERO プラズマヴァイスマン",
+        "card_name": "E・HEROプラズマヴァイスマン",
         "card_yomi": "えれめんたるひーろーぷらずまゔぁいすまん",
         "attribute": "地",
         "level": "8",
@@ -1136,7 +1136,7 @@
         "text": "「E・HERO スパークマン」＋「E・HERO エッジマン」 このカードはフュージョン召喚でしか特殊召喚できない。",
         "conditions": "手札１枚を墓地へ送って発動できる。",
         "effect": "相手フィールドの攻撃表示モンスター１体を選んで破壊する。さらにこのターン、このカードの攻撃は貫通する。",
-        "image": "erementaruhiropurazumavaisuman"
+        "image": "erementaruhi-ro-purazumavaisumann"
     },
     {
         "card_type": "モンスター",
@@ -1153,6 +1153,6 @@
         "text": "",
         "conditions": "このカードを召喚・特殊召喚した自分メインフェイズに、５００LPを払って発動できる。",
         "effect": "自分は３枚ドローする。その後、自分の手札２枚を選んで好きな順番でデッキの下に戻す。このターン、自分は「ラストカル・チェインバース」の効果を発動できない。",
-        "image": "rasutokarucheimbasu"
+        "image": "rasutokarutyeinba-su"
     }
 ]
