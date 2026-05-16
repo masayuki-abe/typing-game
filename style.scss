@@ -8,46 +8,164 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 1vw;
+  height: 100dvh;
+  padding: 1dvw;
+  background: url(/images/bg.png) no-repeat center center;
+  background-size: cover;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-en{
+  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+.common-title{
+  padding-bottom: 1em;
+  color: #01ffff;
+  font-size: clamp(1rem, 1dvw, 2rem);
+  font-weight: 400;
+  letter-spacing: .4em;
+  text-shadow: 0 0 10px #fff;
+}
+
+.common-flex-container{
+  display: flex;
+  align-items: center;
+  gap: .2em;
+  margin-bottom: .5em;
+
+  &-gap2em{
+    gap: 2em;
+  }
+}
+
 #game-container{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80dvw;
+  padding: 2dvw;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px #01ffff solid;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #01ffff;
 }
 
-.card-image{
-  width: 15vw;
+.game-container-left{
+  width: 25%;
+}
+.game-container-right{
+  width: 73%;
 }
 
-.card-name{
-  font-size: clamp(1rem, 3vw, 2rem);
-  font-weight: 700;
-  text-align: center;
+.card{
+  &-image-wrap{
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #01ffff;
+    background-color: rgba(#001437, 0.7);
+  }
+  &-image{
+    width: 100%;
+    height: auto;
+  }
+
+  &-info-area{
+    margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #01ffff;
+    background-color: rgba(#001437, 0.7);
+  }
+  &-input-area{
+    position: relative;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #01ffff;
+    background-color: rgba(#001437, 0.7);
+  }
+
+  &-attribute{
+    padding: .2em .5em .3em;
+    border: 1px #fff solid;
+    color: #fff;
+    line-height: 1;
+  }
+  &-info{
+    padding: .2em .5em;
+    color: #fff;
+  }
+
+  &-name{
+    padding-bottom: .2em;
+    color: #fff;
+    font-size: clamp(.8rem, 2dvw, 1.6rem);
+    font-weight: 400;
+    letter-spacing: .2em;
+
+    rt{
+      padding-bottom: .5em;
+    }
+  }
+
+  &-level{
+    color: #fc6e22;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  &-atk{
+    color: #ce0000;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  &-def{
+    color: #01ffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &-text{
+    color: #fff;
+    line-height: 1.8;
+    letter-spacing: .1em;
+    white-space: pre-wrap;
+  }
+
+  &-ruby{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+  }
+  &-romaji{
+    margin-bottom: 2em;
+    color: #fff;
+    letter-spacing: .1em;
+
+    &::before{
+      content: "ローマ字：";
+    }
+  }
 }
-.card-yomi{
-  text-align: center;
-}
-.target-text{
-  padding-bottom: 1em;
-}
+
 .typing-input{
-  width: 90vw;
+  width: 100%;
   padding: 1em;
   outline: none;
-  border-width: 2px;
-  border-color: #ccc;
-  border-style: solid;
-  text-align: center;
+  border: 1px #01ffff solid;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #01ffff;
+  background-color: rgba(#001437, 0.7);
+  color: #fff;
+  font-size: 1.4rem;
 
   &:focus{
     border-width: 2px;
@@ -56,12 +174,15 @@ body{
 
 /* フィードバックメッセージの基本スタイル */
 .feedback-msg {
-    font-weight: bold;
-    font-size: 1.5rem;
-    height: 1.5rem; /* 高さを固定しておくとレイアウトが崩れません */
-    margin: 10px 0;
-    opacity: 0;     /* 初期状態は透明 */
-    transition: opacity 0.5s ease; /* 0.5秒かけてフェード変化 */
+  position: absolute;
+  top: 0;
+  right: 16px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 1.5rem; /* 高さを固定しておくとレイアウトが崩れません */
+  margin: 10px 0;
+  opacity: 0;     /* 初期状態は透明 */
+  transition: opacity 0.5s ease; /* 0.5秒かけてフェード変化 */
 }
 
 /* 表示状態（JSでこのクラスを付け外しします） */
@@ -71,10 +192,10 @@ body{
 
 /* 正解時のスタイル */
 .feedback-msg.is-good {
-    color: #4caf50; /* 緑系 */
+    color: #01ffff; /* 緑系 */
 }
 
 /* 不正解時のスタイル */
 .feedback-msg.is-miss {
-    color: #f44336; /* 赤系 */
+    color: #ce0000; /* 赤系 */
 }
