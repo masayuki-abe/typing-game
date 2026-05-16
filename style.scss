@@ -10,7 +10,7 @@ body{
   align-items: center;
   height: 100dvh;
   padding: 1dvw;
-  background: url(/images/bg.png) no-repeat center center;
+  background: url(../images/bg.png) no-repeat center center;
   background-size: cover;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -85,11 +85,31 @@ body{
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-      aspect-ratio: var(--ratio);
-      background-size: 100% 4px, 3px 100%; /* 細かい走査線の網目を表現 */
-      pointer-events: none; /* クリックなどを邪魔しない */
-      z-index: 2;
+      background:
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+          linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 4px, 3px 100%;
+      pointer-events: none;
+      z-index: 2; /* 画像の上に重ねる */
+    }
+    &::before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px; /* 流れ落ちる影の太さ（お好みで調整） */
+      /* 上下が透明で、真ん中が少し黒い影のグラデーション */
+      background: linear-gradient(to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.25) 50%,
+          transparent 100%
+      );
+      pointer-events: none;
+      z-index: 3; /* 網目ノイズよりもさらに上に重ねる */
+
+      /* 6秒かけて等速で上から下へループ移動 */
+      animation: tv-roll-noise 6s linear infinite;
     }
   }
   &-image{
@@ -105,6 +125,7 @@ body{
   }
 
   &-info-area{
+    overflow: hidden;
     position: relative;
     margin-bottom: 24px;
     padding: 16px;
@@ -117,15 +138,36 @@ body{
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-      aspect-ratio: var(--ratio);
-      background-size: 100% 4px, 3px 100%; /* 細かい走査線の網目を表現 */
-      pointer-events: none; /* クリックなどを邪魔しない */
-      z-index: 2;
+      background:
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+          linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 4px, 3px 100%;
+      pointer-events: none;
+      z-index: 2; /* 画像の上に重ねる */
+    }
+    &::before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px; /* 流れ落ちる影の太さ（お好みで調整） */
+      /* 上下が透明で、真ん中が少し黒い影のグラデーション */
+      background: linear-gradient(to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.25) 50%,
+          transparent 100%
+      );
+      pointer-events: none;
+      z-index: 3; /* 網目ノイズよりもさらに上に重ねる */
+
+      /* 6秒かけて等速で上から下へループ移動 */
+      animation: tv-roll-noise 6s linear infinite;
     }
 
   }
   &-input-area{
+    overflow: hidden;
     position: relative;
     padding: 16px;
     border-radius: 10px;
@@ -137,11 +179,31 @@ body{
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-      aspect-ratio: var(--ratio);
-      background-size: 100% 4px, 3px 100%; /* 細かい走査線の網目を表現 */
-      pointer-events: none; /* クリックなどを邪魔しない */
-      z-index: 2;
+      background:
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+          linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 4px, 3px 100%;
+      pointer-events: none;
+      z-index: 2; /* 画像の上に重ねる */
+    }
+    &::before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px; /* 流れ落ちる影の太さ（お好みで調整） */
+      /* 上下が透明で、真ん中が少し黒い影のグラデーション */
+      background: linear-gradient(to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.25) 50%,
+          transparent 100%
+      );
+      pointer-events: none;
+      z-index: 3; /* 網目ノイズよりもさらに上に重ねる */
+
+      /* 6秒かけて等速で上から下へループ移動 */
+      animation: tv-roll-noise 6s linear infinite;
     }
   }
 
@@ -309,4 +371,14 @@ body{
     40% { transform: scaleY(1.01) skewY(-0.5deg); }
     60% { transform: scale(0.99); }
     80% { transform: scaleX(1.01) translateX(2px); }
+}
+
+/* --- 走査線を上から下にループさせるアニメーション --- */
+@keyframes tv-roll-noise {
+    0% {
+        top: -60px; /* 自分の高さ分、画面の上の外側に隠れた状態からスタート */
+    }
+    100% {
+        top: 100%; /* 画面の一番下まで通り抜ける */
+    }
 }
