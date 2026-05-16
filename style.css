@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100dvh;
   padding: 1dvw;
-  background: url(../images/bg.png) no-repeat center center;
+  background: url(images/bg.png) no-repeat center center;
   background-size: cover;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
